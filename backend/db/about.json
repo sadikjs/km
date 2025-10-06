@@ -1,0 +1,34 @@
+[
+    {
+      "_id": {
+        "$oid": "661e2720e4ffc982667a3f00"
+      },
+      "aboutRole": "admin",
+      "aboutName": "Khaled Mahmud",
+      "aboutPassword": "1984",
+      "aboutOccupation": "Professor",
+      "aboutContent": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
+      "aboutPicture": "https://res.cloudinary.com/ditjy209s/image/upload/v1757569276/khaled-sir-black-and-white_kgewze.jpg",
+      "aboutDateOfBirth": "18 Nov 1984",
+      "aboutAge":"40",
+      "aboutAddress":"New Eskaton", 
+      "aboutEmail": "khaled@iba-du.edu",
+      "aboutPhone": "8894837844",
+      "aboutNationality":"Bangladeshi",
+      "aboutStudy":"University of Dhaka",
+      "aboutInterest":"Football",
+      "aboutReligion":"Islam",
+      "aboutMasterSession":"2014-2016",
+      "aboutMasterUniversity":"Dhaka University",
+      "aboutMasterDegree":"Master Degree", 
+      "aboutBachelorSession":"2010-2011",
+      "aboutBachelorUniversity":"Dhaka University",
+      "aboutBachelorDegree":"Bachelor Degree",
+      "aboutCollegeSession":"2008-2010",
+      "aboutCollegeCampus":"Notre Dame College",
+      "aboutCollegeDegree":"College",
+      "isEditing": false
+
+    }
+  ]
+  
