@@ -4,7 +4,7 @@ import axios from 'axios';
 export const fetchUsers = () => {
   return (dispatch) => {
     dispatch({ type: FETCH_USERS_REQUEST });
-    axios.get('http://localhost:5000/api/about') 
+    axios.get('http://kheledmahmud.com/api/about')
       .then(response => {
         dispatch({ type: FETCH_USERS_SUCCESS, payload: response.data });
       })

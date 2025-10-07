@@ -2,7 +2,7 @@ import { ABOUT_UPDATE, FETCH_USERS_FAILURE } from "../actionTypes.js";
 
 export const updateAbout = (formData) => {
     return (dispatch) => {
-      fetch(`http://localhost:5000/api/about/${formData._id}`, {
+      fetch(`http://kheledmahmud.com/api/about/${formData._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
