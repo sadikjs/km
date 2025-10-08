@@ -14,10 +14,9 @@ const app = express();
 app.use(cors()); 
 app.use(express.json())
 
-//set static folder 
-app.use(express.static(join(__dirname, 'frontend')));
-
 app.use("/api", aboutRoute)
+
+app.use(express.static(join(__dirname, 'frontend', 'dist')));
 
 app.listen(process.env.PORT, ()=>{
     console.log(`server is running on PORT: ${process.env.PORT}`)

@@ -127,7 +127,7 @@ function Education() {
                                 <>
                                     <div className="flex flex-row justify-start items-center gap-x-2">
                                         <div className="w-4 h-4 z-10 border-1 border-gray-200 bg-gray-300 rounded-full -ml-2"></div>
-                                        <input className="p-1 bg-gray-200 rounded-xl font-roboto text-xs text-[#4e443c] border border-slate-200"
+                                        <input className="p-1 bg-gray-200 rounded-xl font-roboto text-base text-[#4e443c] border border-slate-200"
                                             type="text"
                                             name="aboutMasterSession"
                                             value={formData.aboutMasterSession}
@@ -139,7 +139,7 @@ function Education() {
                                     </div>
                                     <div className="flex flex-col justify-start items-start lg:gap-x-2 ">
                                         <div className="flex flex-row justify-start items-start">
-                                            <input className="font-roboto text-xs text-black border border-slate-200"
+                                            <input className="font-roboto text-base text-black border border-slate-200"
                                                 type="text"
                                                 name="aboutMasterUniversity"
                                                 value={formData.aboutMasterUniversity}
@@ -150,7 +150,7 @@ function Education() {
                                             </button>
                                         </div>
                                         <div className="flex flex-row justify-start items-start">
-                                            <input className="font-roboto text-xs text-black border border-slate-200"
+                                            <input className="font-roboto text-base text-black border border-slate-200"
                                                 type="text"
                                                 name="aboutMasterDegree"
                                                 value={formData.aboutMasterDegree}
@@ -166,20 +166,20 @@ function Education() {
                                 <>
                                     <div className="flex flex-row justify-start items-center lg:gap-x-2">
                                         <li className="w-4 h-4 z-10 border-1 border-gray-200 bg-gray-300 list-none rounded-full -ml-2"></li>
-                                        <li className="p-1 bg-gray-200 rounded-xl font-roboto list-none text-xs text-[#4e443c]">{education.aboutMasterSession}</li>
+                                        <li className="p-1 bg-gray-200 rounded-xl font-roboto list-none text-base text-[#4e443c]">{education.aboutMasterSession}</li>
                                         <button onClick={() => setAboutToEdit(education)}>
                                             <CiEdit className="cursor-pointer" />
                                         </button>
                                     </div>
                                     <div className="flex flex-col justify-start items-start gap-x-2">
                                         <div className="flex flex-row justify-start items-start">
-                                            <li className="font-roboto text-xs list-none text-black">{education.aboutMasterUniversity}</li>
+                                            <li className="font-roboto text-base list-none text-black">{education.aboutMasterUniversity}</li>
                                             <button onClick={() => setAboutToEdit(education)}>
                                                 <CiEdit className="cursor-pointer" />
                                             </button>
                                         </div>
                                         <div className="flex flex-row justify-start items-start">
-                                            <li className="text-[#4e443c] font-roboto list-none text-xs">{education.aboutMasterDegree}</li>
+                                            <li className="text-[#4e443c] font-roboto list-none text-base">{education.aboutMasterDegree}</li>
                                             <button onClick={() => setAboutToEdit(education)}>
                                                 <CiEdit className="cursor-pointer" />
                                             </button>
@@ -192,11 +192,11 @@ function Education() {
                                 <>
                                     <div className="flex flex-row justify-start items-center lg:gap-x-2">
                                         <li className="w-4 h-4 z-10 border-1 border-gray-200 bg-gray-300 list-none rounded-full -ml-2"></li>
-                                        <li className="p-1 bg-gray-200 rounded-xl font-roboto text-xs list-none text-[#4e443c]">{education.aboutMasterSession}</li>
+                                        <li className="p-1 bg-gray-200 rounded-xl font-roboto text-base list-none text-[#4e443c]">{education.aboutMasterSession}</li>
                                     </div>
                                     <div className="flex flex-col justify-start items-start">
-                                        <li className="font-roboto text-xs text-black list-none">{education.aboutMasterUniversity}</li>
-                                        <span className="text-[#4e443c] font-roboto text-xs">{education.aboutMasterDegree}</span>
+                                        <li className="font-roboto text-base text-black list-none">{education.aboutMasterUniversity}</li>
+                                        <span className="text-[#4e443c] font-roboto text-base">{education.aboutMasterDegree}</span>
                                     </div>
                                 </>
                             )
@@ -215,7 +215,7 @@ function Education() {
                                     <>
                                         <div className="flex flex-row justify-start items-center lg:gap-x-2">
                                             <li className="w-4 h-4 z-10 border-1 border-gray-200 bg-gray-300 list-none rounded-full -ml-2"></li>
-                                            <input className="p-1 bg-gray-200 rounded-xl font-roboto text-xs text-[#4e443c] border border-slate-200"
+                                            <input className="p-1 bg-gray-200 rounded-xl font-roboto text-base text-[#4e443c] border border-slate-200"
                                                 name="aboutBachelorSession"
                                                 value={formData.aboutBachelorSession}
                                                 onChange={handleChange}
@@ -226,7 +226,7 @@ function Education() {
                                         </div>
                                         <div className="flex flex-col justify-start items-start lg:gap-x-2">
                                             <div className="flex flex-row justify-start items-start">
-                                                <input className="font-roboto text-xs text-black border border-slate-200"
+                                                <input className="font-roboto text-base text-black border border-slate-200"
                                                     type="text"
                                                     name="aboutBachelorUniversity"
                                                     value={formData.aboutBachelorUniversity}
@@ -237,7 +237,7 @@ function Education() {
                                                 </button>
                                             </div>
                                             <div className="flex flex-row justify-start items-start">
-                                                <input className="text-[#4e443c] font-roboto text-xs border border-slate-200"
+                                                <input className="text-[#4e443c] font-roboto text-base border border-slate-200"
                                                     type="text"
                                                     name="aboutBachelorDegree"
                                                     value={formData.aboutBachelorDegree}
@@ -253,20 +253,20 @@ function Education() {
                                     <>
                                         <div className="flex flex-row justify-start items-center lg:gap-x-2">
                                             <li className="w-4 h-4 z-10 border-1 border-gray-200 bg-gray-300 list-none rounded-full -ml-2"></li>
-                                            <li className="p-1 bg-gray-200 rounded-xl font-roboto list-none text-xs text-[#4e443c]">{education.aboutBachelorSession}</li>
+                                            <li className="p-1 bg-gray-200 rounded-xl font-roboto list-none text-base text-[#4e443c]">{education.aboutBachelorSession}</li>
                                             <button onClick={() => setAboutToEdit(education)}>
                                                 <CiEdit className="cursor-pointer" />
                                             </button>
                                         </div>
                                         <div className="flex flex-col justify-start items-start lg:gap-x-2">
                                             <div className="flex flex-row justify-start items-start">
-                                                <li className="font-roboto text-xs text-black list-none">{education.aboutBachelorUniversity}</li>
+                                                <li className="font-roboto text-base text-black list-none">{education.aboutBachelorUniversity}</li>
                                                 <button onClick={() => setAboutToEdit(education)}>
                                                     <CiEdit className="cursor-pointer" />
                                                 </button>
                                             </div>
                                             <div className="flex flex-row justify-start items-start">
-                                                <li className="text-[#4e443c] font-roboto text-xs list-none">{education.aboutBachelorDegree}</li>
+                                                <li className="text-[#4e443c] font-roboto text-base list-none">{education.aboutBachelorDegree}</li>
                                                 <button onClick={() => setAboutToEdit(education)}>
                                                     <CiEdit className="cursor-pointer" />
                                                 </button>
@@ -278,11 +278,11 @@ function Education() {
                                     <>
                                         <div className="flex flex-row justify-start items-center lg:gap-x-2">
                                             <li className="w-4 h-4 z-10 border-1 border-gray-200 bg-gray-300 list-none rounded-full -ml-2"></li>
-                                            <li className="p-1 bg-gray-200 rounded-xl font-roboto list-none text-xs text-[#4e443c]">{education.aboutBachelorSession}</li>
+                                            <li className="p-1 bg-gray-200 rounded-xl font-roboto list-none text-base text-[#4e443c]">{education.aboutBachelorSession}</li>
                                         </div>
                                         <div className="flex flex-col justify-start items-start">
-                                            <li className="font-roboto text-xs text-black list-none">{education.aboutBachelorUniversity}</li>
-                                            <span className="text-[#4e443c] font-roboto text-xs list-none">{education.aboutBachelorDegree}</span>
+                                            <li className="font-roboto text-base text-black list-none">{education.aboutBachelorUniversity}</li>
+                                            <span className="text-[#4e443c] font-roboto text-base list-none">{education.aboutBachelorDegree}</span>
                                         </div>
                                     </>
                                 )
@@ -302,7 +302,7 @@ function Education() {
                                     <>
                                         <div className="flex flex-row justify-start items-center lg:gap-x-2">
                                             <li className="w-4 h-4 z-10 border-1 border-gray-200 bg-gray-300 list-none rounded-full -ml-2"></li>
-                                            <input className="p-1 bg-gray-200 rounded-xl font-roboto text-xs text-[#4e443c] border border-slate-200"
+                                            <input className="p-1 bg-gray-200 rounded-xl font-roboto text-base text-[#4e443c] border border-slate-200"
                                                 type="text"
                                                 name="aboutCollegeSession"
                                                 value={formData.aboutCollegeSession}
@@ -314,7 +314,7 @@ function Education() {
                                         </div>
                                         <div className="flex flex-col justify-start items-start lg:gap-x-2">
                                             <div className="flex flex-row justify-start items-start">
-                                                <input className="font-roboto text-xs text-black border border-slate-200"
+                                                <input className="font-roboto text-base text-black border border-slate-200"
                                                     type="text"
                                                     name="aboutCollegeCampus"
                                                     value={formData.aboutCollegeCampus}
@@ -325,7 +325,7 @@ function Education() {
                                                 </button>
                                             </div>
                                             <div className="flex flex-row justify-start items-start">
-                                                <input className="text-[#4e443c] font-roboto text-xs border border-slate-200"
+                                                <input className="text-[#4e443c] font-roboto text-base border border-slate-200"
                                                     type="text"
                                                     name="aboutCollegeDegree"
                                                     value={formData.aboutCollegeDegree}
@@ -341,20 +341,20 @@ function Education() {
                                     <>
                                         <div className="flex flex-row justify-start items-center lg:gap-x-2">
                                             <li className="w-4 h-4 z-10 border-1 border-gray-200 bg-gray-300 list-none rounded-full -ml-2"></li>
-                                            <li className="p-1 bg-gray-200 rounded-xl font-roboto text-xs list-none text-[#4e443c]">{education.aboutCollegeSession}</li>
+                                            <li className="p-1 bg-gray-200 rounded-xl font-roboto text-base list-none text-[#4e443c]">{education.aboutCollegeSession}</li>
                                             <button onClick={() => setAboutToEdit(education)}>
                                                     <CiEdit className="cursor-pointer" />
                                                 </button>
                                         </div>
                                         <div className="flex flex-col justify-start items-start lg:gap-x-2">
                                             <div className="flex flex-row justify-start items-start">
-                                                <li className="font-roboto text-xs text-black list-none">{education.aboutCollegeCampus}</li>
+                                                <li className="font-roboto text-base text-black list-none">{education.aboutCollegeCampus}</li>
                                                 <button onClick={() => setAboutToEdit(education)}>
                                                     <CiEdit className="cursor-pointer" />
                                                 </button>
                                             </div>
                                             <div className="flex flex-row justify-start items-start">
-                                                <li className="text-[#4e443c] font-roboto text-xs list-none">{education.aboutCollegeDegree}</li>
+                                                <li className="text-[#4e443c] font-roboto text-base list-none">{education.aboutCollegeDegree}</li>
                                                 <button onClick={() => setAboutToEdit(education)}>
                                                     <CiEdit className="cursor-pointer" />
                                                 </button>
@@ -367,11 +367,11 @@ function Education() {
                                     <>
                                         <div className="flex flex-row justify-start items-center lg:gap-x-2">
                                             <li className="w-4 h-4 z-10 border-1 border-gray-200 bg-gray-300 rounded-full list-none -ml-2"></li>
-                                            <li className="p-1 bg-gray-200 rounded-xl font-roboto text-xs text-[#4e443c] list-none">{education.aboutCollegeSession}</li>
+                                            <li className="p-1 bg-gray-200 rounded-xl font-roboto text-base text-[#4e443c] list-none">{education.aboutCollegeSession}</li>
                                         </div>
                                         <div className="flex flex-col justify-start items-start">
-                                            <li className="font-roboto text-xs text-black list-none">{education.aboutCollegeCampus}</li>
-                                            <span className="text-[#4e443c] font-roboto text-xs">{education.aboutCollegeDegree}</span>
+                                            <li className="font-roboto text-base text-black list-none">{education.aboutCollegeCampus}</li>
+                                            <span className="text-[#4e443c] font-roboto text-base">{education.aboutCollegeDegree}</span>
                                         </div>
                                     </>
                                 )

@@ -120,11 +120,11 @@ function Info() {
             <div className="w-[calc(100%-20%)] lg:w-[calc(100%-50%)] flex flex-row justify-start gap-x-3">
                 <div>
                     <div className="flex flex-col justify-start items-start gap-y-1.5">
-                        <p className="font-roboto text-xs font-semibold">Birthday:</p>
-                        <p className="font-roboto text-xs font-semibold">Age:</p>
-                        <p className="font-roboto text-xs font-semibold">Address:</p>
-                        <p className="font-roboto text-xs font-semibold">Email:</p>
-                        <p className="font-roboto text-xs font-semibold">Phone:</p>
+                        <p className="font-roboto text-base font-semibold">Birthday:</p>
+                        <p className="font-roboto text-base font-semibold">Age:</p>
+                        <p className="font-roboto text-base font-semibold">Address:</p>
+                        <p className="font-roboto text-base font-semibold">Email:</p>
+                        <p className="font-roboto text-base font-semibold">Phone:</p>
                     </div>
                 </div>
                 <div>
@@ -136,7 +136,7 @@ function Info() {
                                         <>
                                             <div className="flex flex-row justify-start items-start">
                                                 <input
-                                                    className="font-roboto text-xs text-[#4e443c] border border-slate-200"
+                                                    className="font-roboto text-base text-[#4e443c] border border-slate-200"
                                                     type="date"
                                                     name="aboutDateOfBirth"
                                                     value={formData.aboutDateOfBirth}
@@ -148,7 +148,7 @@ function Info() {
                                             </div>
                                             <div className="flex flex-row justify-start items-start">
                                                 <input
-                                                    className="font-roboto text-xs text-[#4e443c] border border-slate-200"
+                                                    className="font-roboto text-base text-[#4e443c] border border-slate-200"
                                                     type="text"
                                                     name="aboutAge"
                                                     value={formData.aboutAge}
@@ -161,7 +161,7 @@ function Info() {
                                             <div className="flex flex-row justify-start items-start">
                                                 <input
                                                     type="text"
-                                                    className="font-roboto text-xs text-[#4e443c] border border-slate-200"
+                                                    className="font-roboto text-base text-[#4e443c] border border-slate-200"
                                                     name="aboutAddress"
                                                     value={formData.aboutAddress}
                                                     onChange={handleChange}
@@ -173,7 +173,7 @@ function Info() {
                                             <div className="flex flex-row justify-start items-start">
                                                 <input
                                                     type="text"
-                                                    className="font-roboto text-xs text-[#4e443c] border border-slate-200"
+                                                    className="font-roboto text-base text-[#4e443c] border border-slate-200"
                                                     name="aboutEmail"
                                                     value={formData.aboutEmail}
                                                     onChange={handleChange}
@@ -185,7 +185,7 @@ function Info() {
                                             <div className="flex flex-row justify-start items-start">
                                                 <input
                                                     type="text"
-                                                    className="font-roboto text-xs text-[#4e443c] border border-slate-200"
+                                                    className="font-roboto text-base text-[#4e443c] border border-slate-200"
                                                     name="aboutPhone"
                                                     value={formData.aboutPhone}
                                                     onChange={handleChange}
@@ -199,7 +199,7 @@ function Info() {
 
                                         <>
                                             <div className="flex flex-row justify-start items-start">
-                                                <p className="font-roboto text-xs text-[#4e443c]">
+                                                <p className="font-roboto text-base text-[#4e443c]">
                                                     {info.aboutDateOfBirth
                                                         ? format(new Date(info.aboutDateOfBirth), "dd-MM-yyyy")
                                                         : "null"}
@@ -209,25 +209,25 @@ function Info() {
                                                 </button>
                                             </div>
                                             <div className="flex flex-row justify-start items-start">
-                                                <p className="font-roboto text-xs text-[#4e443c]">{info.aboutAge}</p>
+                                                <p className="font-roboto text-base text-[#4e443c]">{info.aboutAge}</p>
                                                 <button onClick={() => setAboutToEdit(info)}>
                                                     <CiEdit className="cursor-pointer" />
                                                 </button>
                                             </div>
                                             <div className="flex flex-row justify-start items-start">
-                                                <p className="font-roboto text-xs text-[#4e443c]">{info.aboutAddress}</p>
+                                                <p className="font-roboto text-base text-[#4e443c]">{info.aboutAddress}</p>
                                                 <button onClick={() => setAboutToEdit(info)}>
                                                     <CiEdit className="cursor-pointer" />
                                                 </button>
                                             </div>
                                             <div className="flex flex-row justify-start items-start">
-                                                <p className="font-roboto text-xs text-[#4e443c]">{info.aboutEmail}</p>
+                                                <p className="font-roboto text-base text-[#4e443c]">{info.aboutEmail}</p>
                                                 <button onClick={() => setAboutToEdit(info)}>
                                                     <CiEdit className="cursor-pointer" />
                                                 </button>
                                             </div>
-                                            <div className="flex flex-row font-roboto text-xs text-[#4e443c]">
-                                                <p className="font-roboto text-xs text-[#4e443c]">{info.aboutPhone}</p>
+                                            <div className="flex flex-row font-roboto text-base text-[#4e443c]">
+                                                <p className="font-roboto text-base text-[#4e443c]">{info.aboutPhone}</p>
                                                 <button onClick={() => setAboutToEdit(info)}>
                                                     <CiEdit className="cursor-pointer" />
                                                 </button>
@@ -236,15 +236,15 @@ function Info() {
                                     )
                                     ) : (
                                         <>
-                                            <p className="font-roboto text-xs text-[#4e443c]">
+                                            <p className="font-roboto text-base text-[#4e443c]">
                                                 {info.aboutDateOfBirth
                                                     ? format(new Date(info.aboutDateOfBirth), "dd-MM-yyyy")
                                                     : "null"}
                                             </p>
-                                            <p className="font-roboto text-xs text-[#4e443c]">{info.aboutAge}</p>
-                                            <p className="font-roboto text-xs text-[#4e443c]">{info.aboutAddress}</p>
-                                            <p className="font-roboto text-xs text-[#4e443c]">{info.aboutEmail}</p>
-                                            <p className="font-roboto text-xs text-[#4e443c]">{info.aboutPhone}</p>
+                                            <p className="font-roboto text-base text-[#4e443c]">{info.aboutAge}</p>
+                                            <p className="font-roboto text-base text-[#4e443c]">{info.aboutAddress}</p>
+                                            <p className="font-roboto text-base text-[#4e443c]">{info.aboutEmail}</p>
+                                            <p className="font-roboto text-base text-[#4e443c]">{info.aboutPhone}</p>
                                         </>
                                     )
                                 }
@@ -255,10 +255,10 @@ function Info() {
             </div>
             <form onSubmit={handleSubmit} className="w-[calc(100%-20%)] lg:w-[calc(100%-50%)]  flex flex-row justify-start gap-x-3">
                 <div className="flex flex-col justify-start items-start gap-y-1.5">
-                    <th className="font-roboto text-xs">Nationality:</th>
-                    <th className="font-roboto text-xs">Study:</th>
-                    <th className="font-roboto text-xs">Inrerest:</th>
-                    <th className="font-roboto text-xs">Religion:</th>
+                    <th className="font-roboto text-base">Nationality:</th>
+                    <th className="font-roboto text-base">Study:</th>
+                    <th className="font-roboto text-base">Inrerest:</th>
+                    <th className="font-roboto text-base">Religion:</th>
                 </div>
                 {abouts.map((edu) => (
                     <div key={edu._id} className="flex flex-col justify-start items-start gap-y-1.5">
@@ -268,7 +268,7 @@ function Info() {
                                     <div className="flex flex-row justify-start items-start">
                                         <input
                                             type="text"
-                                            className="font-roboto text-xs text-[#4e443c] border border-slate-200"
+                                            className="font-roboto text-base text-[#4e443c] border border-slate-200"
                                             name="aboutNationality"
                                             value={formData.aboutNationality}
                                             onChange={handleChange}
@@ -280,7 +280,7 @@ function Info() {
                                     <div className="flex flex-row justify-start items-start">
                                         <input
                                             type="text"
-                                            className="font-roboto text-xs text-[#4e443c] border border-slate-200"
+                                            className="font-roboto text-base text-[#4e443c] border border-slate-200"
                                             name="aboutStudy"
                                             value={formData.aboutStudy}
                                             onChange={handleChange}
@@ -292,7 +292,7 @@ function Info() {
                                     <div className="flex flex-row justify-start items-start">
                                         <input
                                             type="text"
-                                            className="font-roboto text-xs text-[#4e443c] border border-slate-200"
+                                            className="font-roboto text-base text-[#4e443c] border border-slate-200"
                                             name="aboutInterest"
                                             value={formData.aboutInterest}
                                             onChange={handleChange}
@@ -304,7 +304,7 @@ function Info() {
                                     <div className="flex flex-row justify-start items-start">
                                         <input
                                             type="text"
-                                            className="font-roboto text-xs text-[#4e443c] border border-slate-200"
+                                            className="font-roboto text-base text-[#4e443c] border border-slate-200"
                                             name="aboutReligion"
                                             value={formData.aboutReligion}
                                             onChange={handleChange}
@@ -317,42 +317,42 @@ function Info() {
                             ) : (
                                 <>
                                     <div className="flex flex-row justify-start items-start">
-                                        <p className="font-roboto text-xs text-[#4e443c]">{edu.aboutNationality}</p>
+                                        <p className="font-roboto text-base text-[#4e443c]">{edu.aboutNationality}</p>
                                         <button onClick={() => setAboutToEdit(edu)}>
                                             <CiEdit className="cursor-pointer" />
                                         </button>
                                     </div>
                                     <div className="flex flex-row justify-start items-start">
-                                        <p className="font-roboto text-xs text-[#4e443c]">{edu.aboutStudy}</p>
+                                        <p className="font-roboto text-base text-[#4e443c]">{edu.aboutStudy}</p>
                                         <button onClick={() => setAboutToEdit(edu)}>
                                             <CiEdit className="cursor-pointer" />
                                         </button>
                                     </div>
                                     <div className="flex flex-row justify-start items-start">
-                                        <p className="font-roboto text-xs text-[#4e443c]">{edu.aboutInterest}</p>
+                                        <p className="font-roboto text-base text-[#4e443c]">{edu.aboutInterest}</p>
                                         <button onClick={() => setAboutToEdit(edu)}>
                                             <CiEdit className="cursor-pointer" />
                                         </button>
                                     </div>
                                     <div className="flex flex-row justify-start items-start">
-                                        <p className="font-roboto text-xs text-[#4e443c]">{edu.aboutReligion}</p>
+                                        <p className="font-roboto text-base text-[#4e443c]">{edu.aboutReligion}</p>
                                         <button onClick={() => setAboutToEdit(edu)}>
                                             <CiEdit className="cursor-pointer" />
                                         </button>
                                     </div>
-                                    <td className="font-roboto text-xs text-[#4e443c]">{""}</td>
-                                    <td className="font-roboto text-xs text-[#4e443c]">{""}</td>
-                                    <td className="font-roboto text-xs text-[#4e443c]">{""}</td>
-                                    <td className="font-roboto text-xs text-[#4e443c]">{""}</td>
+                                    <td className="font-roboto text-base text-[#4e443c]">{""}</td>
+                                    <td className="font-roboto text-base text-[#4e443c]">{""}</td>
+                                    <td className="font-roboto text-base text-[#4e443c]">{""}</td>
+                                    <td className="font-roboto text-base text-[#4e443c]">{""}</td>
                                 </>
                             )
 
                             ) : (
                                 <>
-                                    <p className="font-roboto text-xs text-[#4e443c]">{edu.aboutNationality}</p>
-                                    <p className="font-roboto text-xs text-[#4e443c]">{edu.aboutStudy}</p>
-                                    <p className="font-roboto text-xs text-[#4e443c]">{edu.aboutInterest}</p>
-                                    <p className="font-roboto text-xs text-[#4e443c]">{edu.aboutReligion}</p>
+                                    <p className="font-roboto text-base text-[#4e443c]">{edu.aboutNationality}</p>
+                                    <p className="font-roboto text-base text-[#4e443c]">{edu.aboutStudy}</p>
+                                    <p className="font-roboto text-base text-[#4e443c]">{edu.aboutInterest}</p>
+                                    <p className="font-roboto text-base text-[#4e443c]">{edu.aboutReligion}</p>
                                 </>
                             )
                         }

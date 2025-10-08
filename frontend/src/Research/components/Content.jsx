@@ -11,8 +11,8 @@ function Content({ bg, beBorderFirst, beBorderSecound, beBorderThird, beBorderFo
                 ${afBorderFirst} ${afBorderSecound} ${afBorderThird} ${afBorderFour}`}>
                 <MdOutlineCastForEducation className="i w-[25px] h-[25px] my-auto mx-auto pt-2" />
             </span>
-            <h1 className="text-center font-roboto text-xs pt-8">Application</h1>
-            <p className="text-center font-roboto text-xs text-[#4e443c] p-2 text-justify">Nor
+            <h1 className="text-center font-roboto text-base pt-8">Application</h1>
+            <p className="text-center font-roboto text-base text-[#4e443c] p-2 text-justify">Nor
                 again is there anyone who
                 loves or pursues or desires to obtain pain of itself,
                 because it is pain, but because

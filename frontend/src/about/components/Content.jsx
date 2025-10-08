@@ -136,7 +136,7 @@ function Content() {
                                 </div>
                                 <div className="flex flex-row justify-start items-start">
                                     <input
-                                        className="font-roboto text-xs border text-[#4e443c] border-slate-200"
+                                        className="font-roboto text-base border text-[#4e443c] border-slate-200"
                                         type="text"
                                         name="aboutOccupation"
                                         value={formData.aboutOccupation}
@@ -150,7 +150,7 @@ function Content() {
                                     <textarea
                                     rows="7" 
                                     cols="70"
-                                        className="font-roboto text-xs text-[#4e443c] border border-slate-200"
+                                        className="font-roboto text-base text-[#4e443c] border border-slate-200"
                                         type="text"
                                         name="aboutContent"
                                         value={formData.aboutContent}
@@ -170,13 +170,13 @@ function Content() {
                                     </button>
                                 </div>
                                 <div className="flex flex-row justify-start items-center pb-4 border-b border-gray-200">
-                                    <h2 className="font-roboto text-xs text-[#4e443c] text-justify">{about.aboutOccupation}</h2>
+                                    <h2 className="font-roboto text-base text-[#4e443c] text-justify">{about.aboutOccupation}</h2>
                                     <button onClick={() => setAboutToEdit(about)}>
                                         <CiEdit className="cursor-pointer" />
                                     </button>
                                 </div>
                                 <div className="flex flex-row justify-start items-center">
-                                    <p className="font-roboto text-xs text-[#4e443c] text-justify py-4 border-b border-gray-200">{about.aboutContent}</p>
+                                    <p className="font-roboto text-base text-[#4e443c] text-justify py-4 border-b border-gray-200">{about.aboutContent}</p>
                                     <button onClick={() => setAboutToEdit(about)}>
                                         <CiEdit className="cursor-pointer" />
                                     </button>
@@ -185,8 +185,8 @@ function Content() {
                         )) : (
                             <div>
                                 <h1 className="font-roboto text-xl">{about.aboutName}</h1>
-                                <h2 className="font-roboto text-xs text-[#4e443c] text-justify pb-4 border-b border-gray-200">{about.aboutOccupation}</h2>
-                                <p className="font-roboto text-xs text-[#4e443c] text-justify py-4 border-b border-gray-200">
+                                <h2 className="font-roboto text-base text-[#4e443c] text-justify pb-4 border-b border-gray-200">{about.aboutOccupation}</h2>
+                                <p className="font-roboto text-base text-[#4e443c] text-justify py-4 border-b border-gray-200">
                                     {about.aboutContent}
                                 </p>
                             </div>
