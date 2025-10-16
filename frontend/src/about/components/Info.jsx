@@ -6,7 +6,7 @@ import { fetchUsers } from "../../redux/about/thunk/fetchAbout.js";
 import { updateAbout } from "../../redux/about/thunk/updateAbout.js";
 import { IoSaveOutline } from "react-icons/io5";
 function Info() {
-    const { abouts, error, loading } = useSelector((state) => state)
+    const { abouts, error, loading } = useSelector((state) => state.about)
     const dispatch = useDispatch();
     const [aboutToEdit, setAboutToEdit] = useState(null);
     const [formData, setFormData] = useState({

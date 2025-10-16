@@ -3,6 +3,8 @@ import cors from "cors";
 import dotenv from "dotenv"; 
 import dbConnect from "./backend/dbConnect/dbConnect.js";
 import aboutRoute from "./backend/router/about.js"; 
+import homeRouter from "./backend/router/home.js";
+
 import {dirname, join} from "path";
 import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url); 
@@ -15,6 +17,7 @@ app.use(cors());
 app.use(express.json())
 
 app.use("/api", aboutRoute)
+app.use("/api", homeRouter)
 
 app.use(express.static(join(__dirname, 'frontend', 'dist')));
 

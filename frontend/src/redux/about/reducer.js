@@ -4,7 +4,7 @@ const initialState = {
     loading: false,
     error: null,
 }
-const reducer = (state = initialState, action) => {
+const aboutReducer = (state = initialState, action) => {
     switch (action.type) {
         case FETCH_USERS_REQUEST:
             return { ...state, loading: true, error: null };
@@ -28,4 +28,4 @@ const reducer = (state = initialState, action) => {
     }
 };
 
-export default reducer;
+export default aboutReducer;
