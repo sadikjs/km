@@ -1,5 +1,8 @@
 import mongoose from "mongoose";
 const homeSchema = new mongoose.Schema({
+    homeRole:{
+        type: String
+    }, 
     homeTitle:{
         type: String
     }, 

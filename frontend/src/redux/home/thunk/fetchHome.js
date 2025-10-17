@@ -3,7 +3,7 @@ import axios from "axios";
 export const getHome = () =>{
     return (dispatch)=>{
         dispatch({type: HOME_REQUEST})
-        axios.get("http://localhost:5000/api/home")
+        axios.get("https://khaledmahmud.com/api/home")
         .then((response)=>{
         dispatch({type: HOME_SUCCESS, payload: response.data})
         })

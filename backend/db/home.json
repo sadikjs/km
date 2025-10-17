@@ -3,6 +3,7 @@
         "_id": {
             "$oid": "661e2720e4ffc982667a3f90"
           }, 
+          "homeRole":"admin", 
           "homeTitle":"Khaled Mahumd", 
           "homeContent":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio", 
           "homePicture": "https://res.cloudinary.com/ditjy209s/image/upload/v1760591719/Khaled_sir_xftdjv.jpg"
